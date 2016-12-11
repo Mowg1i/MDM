@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>MDM</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body>
+  <div class="title">&#8226;  My Decision Maker  &#8226;</div>
+  <div class="subtitle" id="subtitle">The logical way to make tough decisions.</div>
+  <div class="alertbox" id="alertbox"></div>
+
+  <form id="form" class="form">
+
+    <!-- view0, first page-->
+    <div id="view0">
+      What must you decide?<br>
+
+      <input type="text" id="decision" placeholder="e.g. How should I learn programming?"><br><br> What are your options?<br>
+      <div id="optcontainer">
+      <opt1><input type="text" class="opt" name="opt" placeholder="e.g. take CS50 online, or other online courses"><br></opt1>
+      <opt2><input type="text" class="opt" name="opt" placeholder="e.g. attend a coding bootcamp in person"><br></opt2>
+      <opt3><input type="text" class="opt" name="opt" placeholder="e.g. apply for an unpaid internship"><br><opt3>
+      </div>
+      <input class="addfield" id="addoption" type="button" value="ADD OPTION">
+      <input class="removefield" id="removeoption" type="button" value="REMOVE OPTION">
+      <br>
+      <br> What will be affected by your decision and how important is each area?<br>
+        
+        <span class="small">1 is not important, 5 is very important. (Default is 3)</span><br>
+
+
+      <div id="effcontainer">
+        <eff1><input type="text" class="eff" name="eff" placeholder="e.g. cost"><input type="number" class="imp" name="imp" placeholder="3" min="1" max="5"><br></eff1>
+        
+        <eff2><input type="text" class="eff" name="eff" placeholder="e.g. career prospects"><input type="number" class="imp" name="imp" placeholder="3" min="1" max="5"><br></eff2>
+        
+        <eff3><input type="text" class="eff" name="eff" placeholder="e.g. time commitment"><input type="number" class="imp" name="imp" placeholder="3" min="1" max="5"><br><eff3>
+        </div>
+            
+          
+      <input class="addfield" id="addeffect" type="button" value="ADD EFFECT">
+        <input class="removefield" id="removeeffect" type="button" value="REMOVE EFFECT">
+      <br><br>
+      
+      <input class="next" id="next0" type="button" value="NEXT">
+    </div>
+
+    <!-- view 1, options etc go in here, inside container1.-->
+    <div id="view1" class="view">
+
+      <div id="container1"></div><br>
+
+      <input class="next" id="next1" type="button" value="NEXT"><br>
+      <input class="back" id="back1" type="button" value="BACK"><br>
+    </div>
+
+    <!-- view 2, results-->
+
+    <div id="view2" class="view">
+      <div id="container2"></div>
+      <input class="back" id="back2" type="button" value="BACK"><br>
+    </div>
+    </div>
+    <input class="restart" id="restart" type="button" value="START AGAIN">
+
+  </form>
+</body>
+
+<footer>
+ <br>
+ Made by <a href="http://jmcooper.net/">J M Cooper</a></p><br>
+</footer>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
