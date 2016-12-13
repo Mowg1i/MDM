@@ -1,2 +1,0 @@
-# MDM
-My Decision Maker
